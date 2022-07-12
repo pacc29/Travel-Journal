@@ -12,7 +12,7 @@ export default function App() {
     <div className="top-wrapper">
       <Header />
       <section className="sites-section">{parseSites}</section>
-      <hr className="split-line"></hr>
+      
     </div>
   );
 }

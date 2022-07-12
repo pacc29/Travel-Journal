@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Site(props) {
   return (
-    
+    <>
       <div className="site-wrapper">
         <img className="site-img" src={props.imageUrl} alt="img" />
         <div className="site-info">
@@ -20,6 +20,7 @@ export default function Site(props) {
           <p className="site-description">{props.description}</p>
         </div>
       </div>
-    
+      <hr className="split-line"></hr>
+    </>
   );
 }

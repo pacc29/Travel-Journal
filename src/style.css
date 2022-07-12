@@ -114,10 +114,13 @@ ion-icon {
 .sites-section {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .split-line {
   border: 1px solid #f5f5f5;
-  margin: 18px auto;
+  margin: 0 auto;
   width: 478px;
 }
