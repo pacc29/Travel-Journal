@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Components/header";
+import Sites from "./Components/sites";
+import Data from "./data";
 
-function App() {
+export default function App() {
+  let parseSites = Data.map((site) => {
+    return <Sites id={site.id} {...site} />;
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="top-wrapper">
+      <Header />
+      <section className="sites-section">{parseSites}</section>
+      <hr className="split-line"></hr>
     </div>
   );
 }
-
-export default App;
